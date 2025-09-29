@@ -1,3 +1,5 @@
+alert('oi');
+
 fetch("https://local.meetsoci.com/api/admin/0/set_new_password?request_token=", {
   method: "POST",
   headers: {
